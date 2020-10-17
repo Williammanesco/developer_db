@@ -22,7 +22,7 @@ async function update(req) {
 }
 
 async function _delete(req) {
-    await Developers.delete(req.params.id);
+    await developerService._delete(req.params.id);
     return {}
 }
 
